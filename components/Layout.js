@@ -1,24 +1,25 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { FaInstagram } from 'react-icons/fa'
 
 export default function Layout({ title, children }) {
     return (
         <>
             <Head>
-                <title>{title ? + ' cipsite.net' : 'cipsite.net'}</title>
+                <title>{title ? title + " cipsite.net" : "cipsite.net"}</title>
                 <meta name="description" content="IT consultant" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className='flex min-h-screen flex-col justify-between bg-neutral-50'>
                 <header>
                     <nav className='navbar bg-base-100 justify-between px-4 shadow-xl h-24'>
-                        <Link href={'/'} className='text-3xl p-2 ml-4 font-bold'>
+                        <Link href={'/'} className='text-xl p-2 ml-4 font-bold'>
                             logo/brand
                         </Link>
                         <div>
-                            <Link href={'/'} className='link link-hover p-2 mr-4 font-bold'>home.</Link>
-                            <Link href={'/about'} className='link link-hover p-2 mr-4 font-bold'>about.</Link>
-                            <Link href={'/project'} className='link link-hover p-2 mr-4 font-bold'>project.</Link>
+                            <Link href={'/about'} className='link link-hover p-2 mr-2 font-bold'>about.</Link>
+                            <Link href={'/project'} className='link link-hover p-2 mr-2 font-bold'>project.</Link>
+                            <Link href='https://instagram.com' className='link link-hover p-2 mr-2'><FaInstagram /></Link>
                         </div>
                     </nav>
                 </header>
