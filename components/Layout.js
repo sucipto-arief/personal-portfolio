@@ -14,11 +14,11 @@ export default function Layout({ title, children }) {
                 <header className=''>
                     <nav className='navbar bg-transparent justify-between px-4'>
                         <Link href={'/'} className='text-xl p-2 ml-4 font-bold'>
-                            cipsite
+                            Logo
                         </Link>
                         <div>
                             <Link href={'/about'} className='link link-hover p-2 mr-2 font-bold'>about.</Link>
-                            <Link href={'/project'} className='link link-hover p-2 mr-2 font-bold'>project.</Link>
+                            <Link href={'/contact'} className='link link-hover p-2 mr-2 font-bold'>contact.</Link>
                             <Link href='https://instagram.com' className='link link-hover p-2 mr-2'><FaInstagram size={24} /></Link>
                         </div>
                     </nav>
@@ -32,7 +32,7 @@ export default function Layout({ title, children }) {
                         <a className="link link-hover">Branding</a>
                         <a className="link link-hover">Design</a>
                         <a className="link link-hover">Marketing</a>
-                        <a className="link link-hover">Advertisement</a>
+                        <a className="link link-hover">Photograph</a>
                     </div>
                     <div>
                         <span className="footer-title">Company</span>
